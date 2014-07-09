@@ -1,0 +1,29 @@
+{
+  "name": "css-animation-directions",
+  "version": "0.0.1",
+  "homepage": "http://github.com/mrmrs/css-animation-directions",
+  "description": "Css module of single purpose classes for animation directions",
+  "keywords": [
+    "css",
+    "oocss",
+    "",
+    ""
+  ],
+  "css-animation-directions": {
+    "type": "git",
+    "url": "http://github.com/mrmrs/css-animation-directions.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrmrs/repo/issues",
+    "email": "hi@mrmrs.cc"
+  },
+  "author": {
+    "name": "Adam Morse",
+    "email": "hi@mrmrs.cc",
+    "url": "http://mrmrs.cc"
+  },
+  "contributors": [
+    { "name": "Adam Morse", "email": "hi@mrmrs.cc" }
+  ],
+  "license": "MIT"
+}
