@@ -24,21 +24,21 @@ or download the css on github and include in your project.
   .a-dir-alt     { animation-direction: alternate; }
   .a-dir-alt-rev { animation-direction: alternate-reverse; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .a-dir-norm-ns    { animation-direction: normal; }
   .a-dir-rev-ns     { animation-direction: reverse; }
   .a-dir-alt-ns     { animation-direction: alternate; }
   .a-dir-alt-rev-ns { animation-direction: alternate-reverse; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .a-dir-norm-m    { animation-direction: normal; }
   .a-dir-rev-m     { animation-direction: reverse; }
   .a-dir-alt-m     { animation-direction: alternate; }
   .a-dir-alt-rev-m { animation-direction: alternate-reverse; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .a-dir-norm-l    { animation-direction: normal; }
   .a-dir-rev-l     { animation-direction: reverse; }
   .a-dir-alt-l     { animation-direction: alternate; }
