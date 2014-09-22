@@ -19,7 +19,8 @@ View on [npm](https://www.npmjs.org/package/css-animation-directions)
 ## File Size
 
 1.0K animation-directions.css
-850B animation-directions.min.css
+850B animation-directions.min.css 
+190B minified and gzipped
 
 ## The Code
 ```
