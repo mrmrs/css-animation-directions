@@ -1,7 +1,7 @@
 {
   "name": "css-animation-directions",
   "style": "animation-directions.css",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "homepage": "http://github.com/mrmrs/css-animation-directions",
   "description": "Css module of single purpose classes for animation directions",
   "keywords": [
