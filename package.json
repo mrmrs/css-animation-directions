@@ -30,7 +30,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "tachyons-cli": "^1.0.8"
+    "tachyons-cli": "^1.3.0"
   },
   "scripts": {
     "start": "tachyons src/css-animation-directions.css > css/css-animation-directions.css && tachyons src/css-animation-directions.css --minify > css/css-animation-directions.min.css && tachyons src/css-animation-directions.css --generate-docs --package=../../package.json > readme.md"
