@@ -1,38 +1,44 @@
 {
   "name": "css-animation-directions",
-  "style": "animation-directions.css",
-  "version": "1.0.11",
-  "homepage": "http://github.com/mrmrs/css-animation-directions",
-  "description": "Css module of single purpose classes for animation directions",
+  "version": "2.0.0",
+  "description": "Functional CSS for animation-directions",
+  "style": "dist/animation-directions.css",
+  "main": "dist/animation-directions.css",
+  "exports": {
+    ".": "./dist/animation-directions.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "animation-directions"
+    "animation-directions",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-animation-directions": {
+  "homepage": "https://github.com/mrmrs/css-animation-directions",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-animation-directions.git"
+    "url": "https://github.com/mrmrs/css-animation-directions.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-animation-directions/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-animation-directions/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
