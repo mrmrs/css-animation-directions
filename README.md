@@ -1,120 +1,104 @@
-# css-animation-directions 1.0.9
+# css-animation-directions
 
-Css module of single purpose classes for animation directions
+Functional CSS for animation-directions
 
-#### Stats
+## Filesize
 
-250 | 16 | 32
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/animation-directions.css` | 2473 bytes |
+| `dist/animation-directions.min.css` | 1973 bytes (278 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-animation-directions
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-animation-directions
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-animation-directions.git
+```sh
+npm install css-animation-directions
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-animation-directions";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-animation-directions@1.0.9/css/css-animation-directions.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-animation-directions">
+<link rel="stylesheet" href="https://unpkg.com/css-animation-directions/dist/animation-directions.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   ANIMATION DIRECTIONS
-*/
-.a-dir-norm { -webkit-animation-direction: normal; animation-direction: normal; }
-.a-dir-rev { -webkit-animation-direction: reverse; animation-direction: reverse; }
-.a-dir-alt { -webkit-animation-direction: alternate; animation-direction: alternate; }
-.a-dir-alt-rev { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-@media screen and (min-width: 48em) {
- .a-dir-norm-ns { -webkit-animation-direction: normal; animation-direction: normal; }
- .a-dir-rev-ns { -webkit-animation-direction: reverse; animation-direction: reverse; }
- .a-dir-alt-ns { -webkit-animation-direction: alternate; animation-direction: alternate; }
- .a-dir-alt-rev-ns { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .a-dir-norm-m { -webkit-animation-direction: normal; animation-direction: normal; }
- .a-dir-rev-m { -webkit-animation-direction: reverse; animation-direction: reverse; }
- .a-dir-alt-m { -webkit-animation-direction: alternate; animation-direction: alternate; }
- .a-dir-alt-rev-m { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-}
-@media screen and (min-width: 64em) {
- .a-dir-norm-l { -webkit-animation-direction: normal; animation-direction: normal; }
- .a-dir-rev-l { -webkit-animation-direction: reverse; animation-direction: reverse; }
- .a-dir-alt-l { -webkit-animation-direction: alternate; animation-direction: alternate; }
- .a-dir-alt-rev-m { -webkit-animation-direction: alternate-reverse; animation-direction: alternate-reverse; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-animation-directions/dist/animation-directions.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.a-direction-normal` | `animation-direction: normal;` |
+| `.a-direction-reverse` | `animation-direction: reverse;` |
+| `.a-direction-alt` | `animation-direction: alternate;` |
+| `.a-direction-alt-reverse` | `animation-direction: alternate-reverse;` |
+| `.a-direction-inherit` | `animation-direction: inherit;` |
+| `.a-direction-initial` | `animation-direction: initial;` |
+| `.a-direction-revert` | `animation-direction: revert;` |
+| `.a-direction-revert-layer` | `animation-direction: revert-layer;` |
+| `.a-direction-unset` | `animation-direction: unset;` |
+| `.a-direction-normal-s` | `animation-direction: normal;` |
+| `.a-direction-reverse-s` | `animation-direction: reverse;` |
+| `.a-direction-alt-s` | `animation-direction: alternate;` |
+| `.a-direction-alt-reverse-s` | `animation-direction: alternate-reverse;` |
+| `.a-direction-inherit-s` | `animation-direction: inherit;` |
+| `.a-direction-initial-s` | `animation-direction: initial;` |
+| `.a-direction-revert-s` | `animation-direction: revert;` |
+| `.a-direction-revert-layer-s` | `animation-direction: revert-layer;` |
+| `.a-direction-unset-s` | `animation-direction: unset;` |
+| `.a-direction-normal-m` | `animation-direction: normal;` |
+| `.a-direction-reverse-m` | `animation-direction: reverse;` |
+| `.a-direction-alt-m` | `animation-direction: alternate;` |
+| `.a-direction-alt-reverse-m` | `animation-direction: alternate-reverse;` |
+| `.a-direction-inherit-m` | `animation-direction: inherit;` |
+| `.a-direction-initial-m` | `animation-direction: initial;` |
+| `.a-direction-revert-m` | `animation-direction: revert;` |
+| `.a-direction-revert-layer-m` | `animation-direction: revert-layer;` |
+| `.a-direction-unset-m` | `animation-direction: unset;` |
+| `.a-direction-normal-l` | `animation-direction: normal;` |
+| `.a-direction-reverse-l` | `animation-direction: reverse;` |
+| `.a-direction-alt-l` | `animation-direction: alternate;` |
+| `.a-direction-alt-reverse-l` | `animation-direction: alternate-reverse;` |
+| `.a-direction-inherit-l` | `animation-direction: inherit;` |
+| `.a-direction-initial-l` | `animation-direction: initial;` |
+| `.a-direction-revert-l` | `animation-direction: revert;` |
+| `.a-direction-revert-layer-l` | `animation-direction: revert-layer;` |
+| `.a-direction-unset-l` | `animation-direction: unset;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.a-direction-normal-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/animation-directions.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/animation-directions.css` — formatted
+- `dist/animation-directions.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
